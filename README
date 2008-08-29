@@ -1,0 +1,53 @@
+greed
+------------------------------------------
+The strategy game of Greed. Try to eat as much as possible of the board 
+before munching yourself into a corner.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libncurses8-5.5-3
+
+Build requirements:
+  binutils-20080624-2
+  cygport-0.4.0-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical homepage:
+  http://www.catb.org/~esr/greed/
+
+------------------------------------
+
+Build instructions:
+  unpack greed-3.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./greed-3.4-X.cygport all
+
+This will create:
+  /usr/src/greed-3.4-X-src.tar.bz2
+  /usr/src/greed-3.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary distro
+
+  /usr/bin/greed.exe
+  /usr/share/doc/greed-3.4/READ.ME
+  /usr/share/man/man6/greed.6
+
+------------------
+
+Port Notes:
+
+----- version 3.4-2 -----
+Rebuilt for ncurses-5.5.
+High scores file now in /var/games.
+
+----- version 3.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
