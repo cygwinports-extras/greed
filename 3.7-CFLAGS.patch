@@ -1,0 +1,11 @@
+--- origsrc/greed-3.7/Makefile	2010-10-19 22:18:55.000000000 -0500
++++ src/greed-3.7/Makefile	2010-10-20 21:05:37.067449700 -0500
+@@ -9,7 +9,7 @@ SFILE=/usr/games/lib/greed.hs
+ BIN=/usr/games
+ 
+ greed: greed.c
+-	$(CC) -DSCOREFILE=\"$(SFILE)\" -DRELEASE=\"$(VERS)\" -o greed greed.c -O3 -lcurses
++	$(CC) $(CFLAGS) -DSCOREFILE=\"$(SFILE)\" -DRELEASE=\"$(VERS)\" -o greed greed.c -lcurses
+ 
+ greed.6: greed.xml
+ 	xmlto man greed.xml
